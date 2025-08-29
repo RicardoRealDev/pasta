@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ricardo Real — Portfólio</title>
+  <meta name="description" content="Currículo e portfólio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #4a506e; --text: #f7f7fb; --muted:#b9bed1; --card:#171a2b; --brand:#7c5cff;
+      --radius: 14px; --maxw: 980px; --gap: 18px; --line: rgba(255,255,255,.08);
+    }
+    @media (prefers-color-scheme: light){
+      :root { --bg:#f7f8fc; --text:#0e1022; --muted:#4c5067; --card:#ffffff; --line: rgba(0,0,0,.08); }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg);line-height:1.6
+    }
+    .container{
+      width:min(100% - 32px, var(--maxw));margin-inline:auto
+    }
+    header{
+      position:sticky;top:0;background:rgba(0,0,0,.12);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;padding:14px 0
+    }
+    .brand{
+      font-weight:800
+    }
+    .nav a{
+      color:var(--muted);text-decoration:none;margin-left:14px
+    }
+    .nav a:hover{
+      color:var(--text)
+    }
+
+    .hero{
+      padding:36px 0;display:grid;gap:14px;border-bottom:1px solid var(--line)
+    }
+    .hero h1{
+      margin:0;font-size:clamp(28px,5vw,44px);letter-spacing:-.02em
+    }
+    .hero p{
+      margin:0;color:var(--muted)
+    }
+
+    .profile{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+    .avatar{
+        width:300px;
+        height:240px;
+        border-radius:12px;
+        object-fit:cover;
+        border:1px solid var(--line)
+    }
+   
+    :root {
+       transition: color .2s, background .2s; 
+      }
+    .light {
+    --bg:#f7f8fc; --text:#0e1022; --muted:#4c5067; --card:#ffffff; --line: rgba(0,0,0,.08);
+    }
+    .dark {
+  --bg:#0f1220; --text:#f7f7fb; --muted:#b9bed1; --card:#171a2b; --line: rgba(255,255,255,.08);
+    }
+
+
+    section{
+      padding:28px 0
+      }
+    h2{
+      margin:0 0 10px 0;font-size:22px
+      }
+    .grid{
+      display:grid;gap:var(--gap)
+      }
+    .grid.auto{
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
+    }
+
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px
+    }
+    .tags{
+      display:flex;flex-wrap:wrap;gap:8px;margin-top:8px
+    }
+    .tag{
+      font-size:.9rem;border:1px solid var(--line);padding:.4rem .6rem;border-radius:999px
+    }
+
+    .project{
+      display:grid;gap:8px
+    }
+    .thumb{
+      aspect-ratio:16/9;width:100%;border-radius:10px;object-fit:cover;border:1px solid var(--line)
+    }
+    .row{
+      display:flex;gap:10px;flex-wrap:wrap
+    }
+    .btn{
+      display:inline-block;text-decoration:none;border:1px solid var(--line);padding:.6rem .9rem;border-radius:10px;color:var(--text)
+    }
+    .btn.primary{
+      background:var(--brand);border-color:transparent;color:white
+    }
+
+    .socials{
+      display:flex;gap:10px;flex-wrap:wrap
+    }
+    .socials a{
+
+      display:inline-block;padding:.55rem .8rem;border-radius:10px;border:1px solid var(--line);text-decoration:none;color:var(--text)
+    }
+
+    form{
+      display:grid;gap:10px
+
+    }
+    input, textarea{
+      width:100%;padding:.8rem 1rem;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--text)
+    }
+
+    footer{
+      border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center
+    }
+    h1, h2 {
+    position: relative;
+    display: inline-block;
+    }
+    .avat{
+        width:300px;
+        height:240px;
+        border-radius:12px;
+        object-fit:cover;
+        border:1px solid var(--line)
+
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">&lt;Ricardo Real/&gt;</div>
+
+      <nav>
+
+        <a href="#sobre">Sobre</a>
+        <a href="hobbies">Hobbies</a>
+        <a href="#portfolio">Portfólio</a>
+
+      </nav>
+
+      <button id="theme-toggle" class="btn">Alternar tema</button>
+
+    </div>
+  </header>
+
+  
+
+  <main class="container">
+    <section class="hero">
+
+      <div class="profile">
+       
+        <img class="avatar" width=200px src="https://media.licdn.com/dms/image/v2/D4D03AQEO_WArGI2J6Q/profile-displayphoto-shrink_800_800/B4DZWBtgRPG4Ac-/0/1741637945029?e=1759363200&v=beta&t=IXxue7KE6Lq3ixeelRoWslv00BDSw6l57xa_SWkD9t4" alt="Sua foto"/>
+        <div>
+
+          <h1>Ricardo Real — Desenvolvedor Júnior</h1>
+          <p>Crio aplicações web simples, rápidas e acessíveis. Stack: HTML, CSS, JavaScript/TypeScript, Python.</p>
+          <p>Tenho 18 anos.</p>
+          <div class="socials" style="margin-top:8px">
+  
+            <a href="https://www.linkedin.com/in/ricardo-real-628a40355/" target="_blank">
+              <img src="./icon/linkedin.png" width="50px" alt="Projeto 1" width="300">
+            </a>
+            
+            <a href="https://www.instagram.com/ric.castroreal/" target="_blank">
+              <img src="./icon/instagram.png" width="50px" alt="Projeto 1" width="300">
+            </a>
+
+            
+            <a href="https://github.com/RicardoRealDev" target="_blank">
+                <img src="./icon/github.png" width="50px" alt="Projeto 1" width="300">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <div class="profile">
+
+      <img href="https://www.ulbra.br/" class="avat" src="./icon/ulbra1.png">
+
+        <div class="card">
+          
+          <p>Sou Estudante de Ciência da Computação na Universidade ULBRA e Engenharia de Software na Universidade ULBRA, ambas no segundo período de graduação. Fiz esse site para contribuir com minha carreira profissional e que ele funcione como meu portifólio.
+          </p>
+        
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">TypeScript</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    
+   
+
+    <section id="portfolio">
+
+      <h2>Portifólio</h2>
+
+      <p class="muted"></p>
+
+      <div class="grid auto">
+        <div class="card">
+            <a>Ainda não coloquei, nem anexei o meu portifólio.</a>
+        </div>
+      </div>
+
+    </section>
+    
+    <script>
+        const prefersDark = matchMedia('(prefers-color-scheme: dark)').matches;
+        const saved = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+          document.documentElement.classList.add(saved);
+
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+        const html = document.documentElement;
+        const next = html.classList.contains('dark') ? 'light' : 'dark';
+        html.classList.remove('dark','light'); html.classList.add(next);
+        localStorage.setItem('theme', next);
+        });
+    </script>
+
+</body>
+</html>
