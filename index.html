@@ -110,6 +110,7 @@
 
     .socials{
       display:flex;gap:10px;flex-wrap:wrap
+     
     }
     .socials a{
 
@@ -128,8 +129,8 @@
       border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center
     }
     h1, h2 {
-    position: relative;
-    display: inline-block;
+      position: relative;
+      display: inline-block;
     }
     .avat{
         width:300px;
@@ -138,6 +139,12 @@
         object-fit:cover;
         border:1px solid var(--line)
 
+    }
+    .icon{
+      transition: transform 0.3s ease;
+    } 
+    .icon:hover {
+      transform: scale(1.1);
     }
 
   </style>
@@ -173,19 +180,19 @@
           <h1>Ricardo Real — Desenvolvedor Júnior</h1>
           <p>Crio aplicações web simples, rápidas e acessíveis. Stack: HTML, CSS, JavaScript/TypeScript, Python.</p>
           <p>Tenho 18 anos.</p>
-          <div class="socials" style="margin-top:8px">
+          <div class="socials"  class="icon"style="margin-top:8px">
   
             <a href="https://www.linkedin.com/in/ricardo-real-628a40355/" target="_blank">
-              <img src="./icon/linkedin.png" width="50px" alt="Projeto 1" width="300">
+              <img class="icon"    src="./icon/linkedin.png" width="50px" alt="Projeto 1" width="300">
             </a>
             
             <a href="https://www.instagram.com/ric.castroreal/" target="_blank">
-              <img src="./icon/instagram.png" width="50px" alt="Projeto 1" width="300">
+              <img class="icon" src="./icon/instagram.png" width="50px" alt="Projeto 1" width="300">
             </a>
 
             
             <a href="https://github.com/RicardoRealDev" target="_blank">
-                <img src="./icon/github.png" width="50px" alt="Projeto 1" width="300">
+                <img class="icon" src="./icon/github.png" width="50px" alt="Projeto 1" width="300">
             </a>
           </div>
 
@@ -228,7 +235,7 @@
 
       <div class="grid auto">
         <div class="card">
-            <a>Ainda não coloquei, nem anexei o meu portifólio.</a>
+            <a>Ainda não coloquei, nem anexei o meu portfólio.</a>
         </div>
       </div>
 
